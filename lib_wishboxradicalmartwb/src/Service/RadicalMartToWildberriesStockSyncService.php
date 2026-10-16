@@ -22,13 +22,14 @@ defined('_JEXEC') or die;
  */
 final readonly class RadicalMartToWildberriesStockSyncService
 {
+	private const string WB_PRODUCT_ID_FIELD = 'wishbox_wb_id';
+
 	/**
 	 * Initialize the stock synchronization service.
 	 *
 	 * @param   ProductService            $radicalMartProductService  RadicalMart product source.
 	 * @param   WildberriesStockService  $wildberriesStockService   Wildberries stock destination.
 	 * @param   int                       $warehouseId                Wildberries seller warehouse ID.
-	 * @param   string                    $chrtIdField                RadicalMart field containing chrtId.
 	 *
 	 * @return void
 	 *
@@ -37,8 +38,7 @@ final readonly class RadicalMartToWildberriesStockSyncService
 	public function __construct(
 		private ProductService           $radicalMartProductService,
 		private WildberriesStockService $wildberriesStockService,
-		private int                      $warehouseId,
-		private string                   $chrtIdField
+		private int                      $warehouseId
 	)
 	{
 	}
@@ -57,7 +57,7 @@ final readonly class RadicalMartToWildberriesStockSyncService
 	public function updateStocks(array $productIds = []): StockSyncResult
 	{
 		$products = $this->radicalMartProductService->getProducts(
-			$this->chrtIdField,
+			self::WB_PRODUCT_ID_FIELD,
 			'RUB',
 			1.0,
 			$productIds

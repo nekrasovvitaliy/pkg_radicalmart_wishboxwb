@@ -50,18 +50,11 @@ final class RadicalMartToWildberriesStockSyncServiceProvider implements ServiceP
 				RadicalMartToWildberriesStockSyncService::class,
 				static function (Container $container): RadicalMartToWildberriesStockSyncService {
 					$wishboxWbComponentParams = ComponentHelper::getParams('com_wishboxwb');
-					$wishboxRadicalMartWbComponentParams = ComponentHelper::getParams(
-						'com_wishboxradicalmartwb'
-					);
 
 					return new RadicalMartToWildberriesStockSyncService(
 						$container->get(ProductService::class),
 						$container->get(WildberriesStockService::class),
-						(int) $wishboxWbComponentParams->get('wildberries_default_warehouse_id', 0),
-						(string) $wishboxRadicalMartWbComponentParams->get(
-							'wildberries_chrt_id_field',
-							'wishbox_wb_chrt_id'
-						)
+						(int) $wishboxWbComponentParams->get('wildberries_default_warehouse_id', 0)
 					);
 				}
 			);
