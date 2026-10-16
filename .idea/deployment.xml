@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="watt-shop.com" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" autoUploadExternalChanges="true">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="watt-shop.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/administrator/components/com_wishboxradicalmartwb/access.xml" local="$PROJECT_DIR$/com_wishboxradicalmartwb/administrator/access.xml" web="/" />
+            <mapping deploy="/administrator/components/com_wishboxradicalmartwb/config.xml" local="$PROJECT_DIR$/com_wishboxradicalmartwb/administrator/config.xml" web="/" />
+            <mapping deploy="/administrator/components/com_wishboxradicalmartwb/services" local="$PROJECT_DIR$/com_wishboxradicalmartwb/administrator/services" web="/" />
+            <mapping deploy="/administrator/components/com_wishboxradicalmartwb/src" local="$PROJECT_DIR$/com_wishboxradicalmartwb/administrator/src" web="/" />
+            <mapping deploy="/administrator/components/com_wishboxradicalmartwb/tmpl" local="$PROJECT_DIR$/com_wishboxradicalmartwb/administrator/tmpl" web="/" />
+            <mapping deploy="/administrator/components/com_wishboxradicalmartwb/wishboxradicalmartwb.xml" local="$PROJECT_DIR$/com_wishboxradicalmartwb/wishboxradicalmartwb.xml" web="/" />
+            <mapping deploy="/administrator/language" local="$PROJECT_DIR$/com_wishboxradicalmartwb/administrator/language" web="/" />
+            <mapping deploy="/administrator/language" local="$PROJECT_DIR$/plg_radicalmart_wishboxwb/language" web="/" />
+            <mapping deploy="/administrator/language" local="$PROJECT_DIR$/plg_task_wishboxradicalmartwb/language" web="/" />
+            <mapping deploy="/administrator/manifests/libraries/wishboxradicalmartwb.xml" local="$PROJECT_DIR$/lib_wishboxradicalmartwb/lib_wishboxradicalmartwb.xml" web="/" />
+            <mapping deploy="/administrator/manifests/packages/pkg_radicalmart_wishboxwb.xml" local="$PROJECT_DIR$/pkg_radicalmart_wishboxwb.xml" web="/" />
+            <mapping deploy="/administrator/manifests/packages/radicalmart_wishboxwb/script.php" local="$PROJECT_DIR$/script.php" web="/" />
+            <mapping deploy="/language" local="$PROJECT_DIR$/language" web="/" />
+            <mapping deploy="/language" local="$PROJECT_DIR$/lib_wishboxradicalmartwb/language" web="/" />
+            <mapping deploy="/layouts/plugins/radicalmart/wishboxwb/toolbar" local="$PROJECT_DIR$/plg_radicalmart_wishboxwb/layouts/toolbar" web="/" />
+            <mapping deploy="/libraries/wishboxradicalmartwb/src" local="$PROJECT_DIR$/lib_wishboxradicalmartwb/src" web="/" />
+            <mapping deploy="/media/plg_radicalmart_wishboxwb/joomla.asset.json" local="$PROJECT_DIR$/plg_radicalmart_wishboxwb/media/joomla.asset.json" web="/" />
+            <mapping deploy="/media/plg_radicalmart_wishboxwb/js" local="$PROJECT_DIR$/plg_radicalmart_wishboxwb/media/js" web="/" />
+            <mapping deploy="/plugins/radicalmart/wishboxwb/script.php" local="$PROJECT_DIR$/plg_radicalmart_wishboxwb/script.php" web="/" />
+            <mapping deploy="/plugins/radicalmart/wishboxwb/services" local="$PROJECT_DIR$/plg_radicalmart_wishboxwb/services" web="/" />
+            <mapping deploy="/plugins/radicalmart/wishboxwb/src" local="$PROJECT_DIR$/plg_radicalmart_wishboxwb/src" web="/" />
+            <mapping deploy="/plugins/radicalmart/wishboxwb/wishboxwb.xml" local="$PROJECT_DIR$/plg_radicalmart_wishboxwb/wishboxwb.xml" web="/" />
+            <mapping deploy="/plugins/task/wishboxradicalmartwb/forms" local="$PROJECT_DIR$/plg_task_wishboxradicalmartwb/forms" web="/" />
+            <mapping deploy="/plugins/task/wishboxradicalmartwb/script.php" local="$PROJECT_DIR$/plg_task_wishboxradicalmartwb/script.php" web="/" />
+            <mapping deploy="/plugins/task/wishboxradicalmartwb/services" local="$PROJECT_DIR$/plg_task_wishboxradicalmartwb/services" web="/" />
+            <mapping deploy="/plugins/task/wishboxradicalmartwb/src" local="$PROJECT_DIR$/plg_task_wishboxradicalmartwb/src" web="/" />
+            <mapping deploy="/plugins/task/wishboxradicalmartwb/wishboxradicalmartwb.xml" local="$PROJECT_DIR$/plg_task_wishboxradicalmartwb/wishboxradicalmartwb.xml" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>

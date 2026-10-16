@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="task" method="upgrade">
+	<name>PLG_TASK_WISHBOXRADICALMARTWB</name>
+	<author>Nekrasov Vitaliy</author>
+	<authorEmail>nekrasov_vitaliy@list.ru</authorEmail>
+	<creationDate>October 2026</creationDate>
+	<version>1.0.0</version>
+	<description>PLG_TASK_WISHBOXRADICALMARTWB_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\Task\WishboxRadicalMartWb</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<folder plugin="wishboxradicalmartwb">services</folder>
+		<folder>forms</folder>
+		<folder>src</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_task_wishboxradicalmartwb.ini</language>
+		<language tag="en-GB">language/en-GB/plg_task_wishboxradicalmartwb.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/plg_task_wishboxradicalmartwb.ini</language>
+		<language tag="ru-RU">language/ru-RU/plg_task_wishboxradicalmartwb.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="orders" label="PLG_TASK_WISHBOXRADICALMARTWB_FIELDSET_ORDERS_LABEL">
+				<field name="radicalmart_order_user_id" type="user" label="PLG_TASK_WISHBOXRADICALMARTWB_FIELD_ORDER_USER_LABEL" required="true" />
+				<field name="order_import_limit" type="number" label="PLG_TASK_WISHBOXRADICALMARTWB_FIELD_ORDER_LIMIT_LABEL" default="100" min="1" max="1000" filter="integer" />
+				<field name="order_currency" type="text" label="PLG_TASK_WISHBOXRADICALMARTWB_FIELD_ORDER_CURRENCY_LABEL" default="RUB" required="true" filter="cmd" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

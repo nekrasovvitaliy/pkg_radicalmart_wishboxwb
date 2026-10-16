@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="radicalmart" method="upgrade">
+    <name>plg_radicalmart_wishboxwb</name>
+    <author>RadicalMart Team</author>
+    <creationDate>October 2026</creationDate>
+    <copyright>Copyright © 2026 RadicalMart. All rights reserved.</copyright>
+    <license>https://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>info@radicalmart.ru</authorEmail>
+    <authorUrl>https://radicalmart.ru</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_RADICALMART_WISHBOXWB_DESCRIPTION</description>
+    <namespace path="src">Joomla\Plugin\RadicalMart\WishboxWb</namespace>
+    <scriptfile>script.php</scriptfile>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/plg_radicalmart_wishboxwb.ini</language>
+        <language tag="en-GB">en-GB/plg_radicalmart_wishboxwb.sys.ini</language>
+        <language tag="ru-RU">ru-RU/plg_radicalmart_wishboxwb.ini</language>
+        <language tag="ru-RU">ru-RU/plg_radicalmart_wishboxwb.sys.ini</language>
+    </languages>
+    <files>
+        <folder>services</folder>
+        <folder plugin="wishboxwb">src</folder>
+    </files>
+    <layouts destination="plugins/radicalmart/wishboxwb" folder="layouts">
+        <folder>toolbar</folder>
+    </layouts>
+    <media destination="plg_radicalmart_wishboxwb" folder="media">
+        <folder>js</folder>
+        <filename>joomla.asset.json</filename>
+    </media>
+</extension>

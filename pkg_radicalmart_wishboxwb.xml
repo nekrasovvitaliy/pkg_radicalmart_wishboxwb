@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" version="6.1" method="upgrade">
+	<name>PKG_RADICALMART_WISHBOXWB</name>
+	<packagename>radicalmart_wishboxwb</packagename>
+    <author>Nekrasov Vitaliy</author>
+    <authorEmail>nekrasov_vitaliy@list.ru</authorEmail>
+    <creationDate>October 2026</creationDate>
+    <version>1.0.0</version>
+    <packager>Nekrasov Vitaliy</packager>
+	<description>PKG_RADICALMART_WISHBOXWB_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/pkg_radicalmart_wishboxwb.sys.ini</language>
+		<language tag="ru-RU">ru-RU/pkg_radicalmart_wishboxwb.sys.ini</language>
+	</languages>
+	<files>
+		<file type="library" id="wishboxradicalmartwb">lib_wishboxradicalmartwb.zip</file>
+		<file type="component" id="com_wishboxradicalmartwb">com_wishboxradicalmartwb.zip</file>
+		<file type="plugin" group="radicalmart" id="wishboxwb">plg_radicalmart_wishboxwb.zip</file>
+		<file type="plugin" group="task" id="wishboxradicalmartwb">plg_task_wishboxradicalmartwb.zip</file>
+	</files>
+</extension>

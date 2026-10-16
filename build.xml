@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="pkg_radicalmart_wishboxwb" default="make" basedir=".">
+    <property name="library.archive" value="lib_wishboxradicalmartwb.zip"/>
+    <property name="component.archive" value="com_wishboxradicalmartwb.zip"/>
+    <property name="plugin.archive" value="plg_radicalmart_wishboxwb.zip"/>
+    <property name="task.plugin.archive" value="plg_task_wishboxradicalmartwb.zip"/>
+    <property name="package.archive" value="pkg_radicalmart_wishboxwb.zip"/>
+
+    <target name="make" description="Build the RadicalMart Wishbox Wildberries package.">
+        <delete quiet="yes">
+            <fileset dir=".">
+                <include name="${library.archive}"/>
+                <include name="${component.archive}"/>
+                <include name="${plugin.archive}"/>
+                <include name="${task.plugin.archive}"/>
+                <include name="${package.archive}"/>
+            </fileset>
+        </delete>
+
+        <zip destfile="${library.archive}">
+            <fileset dir="./lib_wishboxradicalmartwb">
+                <include name="language/**"/>
+                <include name="src/**"/>
+                <include name="lib_wishboxradicalmartwb.xml"/>
+            </fileset>
+        </zip>
+
+		<zip destfile="${task.plugin.archive}">
+			<fileset dir="./plg_task_wishboxradicalmartwb">
+				<include name="forms/**"/>
+				<include name="language/**"/>
+				<include name="services/**"/>
+				<include name="src/**"/>
+				<include name="script.php"/>
+				<include name="wishboxradicalmartwb.xml"/>
+			</fileset>
+		</zip>
+
+        <zip destfile="${component.archive}">
+            <fileset dir="./com_wishboxradicalmartwb">
+                <include name="administrator/**"/>
+                <include name="wishboxradicalmartwb.xml"/>
+            </fileset>
+        </zip>
+
+        <zip destfile="${plugin.archive}">
+            <fileset dir="./plg_radicalmart_wishboxwb">
+                <include name="language/**"/>
+                <include name="layouts/**"/>
+                <include name="media/**"/>
+                <include name="services/**"/>
+                <include name="src/**"/>
+                <include name="script.php"/>
+                <include name="wishboxwb.xml"/>
+            </fileset>
+        </zip>
+
+        <zip destfile="${package.archive}">
+            <fileset dir=".">
+                <include name="${library.archive}"/>
+                <include name="${component.archive}"/>
+                <include name="${plugin.archive}"/>
+                <include name="${task.plugin.archive}"/>
+                <include name="language/**"/>
+                <include name="script.php"/>
+                <include name="pkg_radicalmart_wishboxwb.xml"/>
+            </fileset>
+        </zip>
+
+        <delete file="${library.archive}" quiet="yes"/>
+        <delete file="${component.archive}" quiet="yes"/>
+        <delete file="${plugin.archive}" quiet="yes"/>
+		<delete file="${task.plugin.archive}" quiet="yes"/>
+    </target>
+</project>

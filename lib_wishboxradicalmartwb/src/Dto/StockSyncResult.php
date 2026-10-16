@@ -1,0 +1,40 @@
+<?php
+/**
+ * @copyright   (c) 2013-2026 Nekrasov Vitaliy <nekrasov_vitaliy@list.ru>
+ * @license     GNU General Public License version 2 or later;
+ */
+
+namespace WishboxRadicalMartWbLibrary\Dto;
+
+// phpcs:disable PSR1.Files.SideEffects
+defined('_JEXEC') or die;
+// phpcs:enable PSR1.Files.SideEffects
+
+/**
+ * Summarizes one RadicalMart-to-Wildberries stock synchronization run.
+ *
+ * @since 1.0.0
+ */
+final class StockSyncResult
+{
+	/**
+	 * Initialize a synchronization result.
+	 *
+	 * @param   int           $updated  Updated product count.
+	 * @param   int           $skipped  Skipped product count.
+	 * @param   int           $failed   Failed product count.
+	 * @param   list<string>  $errors   Synchronization error messages.
+	 *
+	 * @return void
+	 *
+	 * @since 1.0.0
+	 */
+	public function __construct(
+		public int $updated = 0,
+		public int $skipped = 0,
+		public int $failed = 0,
+		public array $errors = []
+	)
+	{
+	}
+}

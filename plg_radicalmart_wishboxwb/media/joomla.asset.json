@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "plg_radicalmart_wishboxwb",
+  "version": "1.0.0",
+  "description": "RadicalMart Wishbox Wildberries toolbar actions",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "type": "script",
+      "name": "plg_radicalmart_wishboxwb.script",
+      "uri": "plg_radicalmart_wishboxwb/script.js",
+      "dependencies": [
+        "core"
+      ],
+      "version": "1.0.0"
+    }
+  ]
+}

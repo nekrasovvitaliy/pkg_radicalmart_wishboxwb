@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="wildberries" label="COM_WISHBOXRADICALMARTWB_FIELDSET_WILDBERRIES_LABEL">
+		<field
+			name="wildberries_chrt_id_field"
+			type="text"
+			label="COM_WISHBOXRADICALMARTWB_FIELD_CHRT_ID_FIELD_LABEL"
+			description="COM_WISHBOXRADICALMARTWB_FIELD_CHRT_ID_FIELD_DESC"
+			default="wishbox_wb_chrt_id"
+			required="true"
+			filter="cmd"
+		/>
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL">
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			component="com_wishboxradicalmartwb"
+			section="component"
+		/>
+	</fieldset>
+</config>
